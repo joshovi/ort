@@ -35,7 +35,7 @@ object LicenseFilenamePatterns {
     )
 
     /**
-     * A list of globs that match default patent file names.
+     * A list of globs that match default patent file names. The patterns are supposed to be used case-insenstively.
      */
     val PATENT_FILENAMES = listOf(
         "patents"
@@ -43,7 +43,7 @@ object LicenseFilenamePatterns {
 
     /**
      * A list of globs that match files that often define the root license of a project, but are no license files and
-     * are therefore not contained in [LICENSE_FILENAMES].
+     * are therefore not contained in [LICENSE_FILENAMES]. The patterns are supposed to be used case-insenstively.
      */
     val ROOT_LICENSE_FILENAMES = listOf(
         "readme*"
@@ -51,7 +51,7 @@ object LicenseFilenamePatterns {
 
     /**
      * A list of globs that match all kind of license file names, equaling the union of [LICENSE_FILENAMES],
-     * [PATENT_FILENAMES] and [ROOT_LICENSE_FILENAMES].
+     * [PATENT_FILENAMES] and [ROOT_LICENSE_FILENAMES]. The patterns are supposed to be used case-insenstively.
      */
     val ALL_LICENSE_FILENAMES = LICENSE_FILENAMES + PATENT_FILENAMES + ROOT_LICENSE_FILENAMES
 }
